@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Generated Output
+Cover_Letters/
+
+# Python clutter
+__pycache__/
+*.pyc
+venv/
+
+# Data tracking (Optional: remove if you want to sync your log)
+*.csv
+*.pdf
+
+# OS clutter
+.DS_Store
