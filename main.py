@@ -19,6 +19,7 @@ Please summarize this pdf lesson into concise bullet points, highlighting the ke
 The summary should be clear and easy to understand, suitable for quick review and study.
 If possible, split up by lesson sections, and include any important formulas, definitions, or examples mentioned in the text.
 Mention how to solve any problems or exercises included in the lesson, and provide step-by-step explanations if applicable.
+Be prepared to solve questions about solving problems, clarifying concepts, or providing additional examples based on the content of the lesson.
 """
 TABLE_NAME = "Courses"
 
