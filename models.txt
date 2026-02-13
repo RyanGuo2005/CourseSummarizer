@@ -1,0 +1,135 @@
+models/gemini-2.5-flash
+Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.
+----------------------------------------
+models/gemini-2.5-pro
+Stable release (June 17th, 2025) of Gemini 2.5 Pro
+----------------------------------------
+models/gemini-2.0-flash
+Gemini 2.0 Flash
+----------------------------------------
+models/gemini-2.0-flash-001
+Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in January of 2025.
+----------------------------------------
+models/gemini-2.0-flash-exp-image-generation
+Gemini 2.0 Flash (Image Generation) Experimental
+----------------------------------------
+models/gemini-2.0-flash-lite-001
+Stable version of Gemini 2.0 Flash-Lite
+----------------------------------------
+models/gemini-2.0-flash-lite
+Gemini 2.0 Flash-Lite
+----------------------------------------
+models/gemini-exp-1206
+Experimental release (March 25th, 2025) of Gemini 2.5 Pro
+----------------------------------------
+models/gemini-2.5-flash-preview-tts
+Gemini 2.5 Flash Preview TTS
+----------------------------------------
+models/gemini-2.5-pro-preview-tts
+Gemini 2.5 Pro Preview TTS
+----------------------------------------
+models/gemma-3-1b-it
+No description available.
+----------------------------------------
+models/gemma-3-4b-it
+No description available.
+----------------------------------------
+models/gemma-3-12b-it
+No description available.
+----------------------------------------
+models/gemma-3-27b-it
+No description available.
+----------------------------------------
+models/gemma-3n-e4b-it
+No description available.
+----------------------------------------
+models/gemma-3n-e2b-it
+No description available.
+----------------------------------------
+models/gemini-flash-latest
+Latest release of Gemini Flash
+----------------------------------------
+models/gemini-flash-lite-latest
+Latest release of Gemini Flash-Lite
+----------------------------------------
+models/gemini-pro-latest
+Latest release of Gemini Pro
+----------------------------------------
+models/gemini-2.5-flash-lite
+Stable version of Gemini 2.5 Flash-Lite, released in July of 2025
+----------------------------------------
+models/gemini-2.5-flash-image
+Gemini 2.5 Flash Preview Image
+----------------------------------------
+models/gemini-2.5-flash-preview-09-2025
+Gemini 2.5 Flash Preview Sep 2025
+----------------------------------------
+models/gemini-2.5-flash-lite-preview-09-2025
+Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite
+----------------------------------------
+models/gemini-3-pro-preview
+Gemini 3 Pro Preview
+----------------------------------------
+models/gemini-3-flash-preview
+Gemini 3 Flash Preview
+----------------------------------------
+models/gemini-3-pro-image-preview
+Gemini 3 Pro Image Preview
+----------------------------------------
+models/nano-banana-pro-preview
+Gemini 3 Pro Image Preview
+----------------------------------------
+models/gemini-robotics-er-1.5-preview
+Gemini Robotics-ER 1.5 Preview
+----------------------------------------
+models/gemini-2.5-computer-use-preview-10-2025
+Gemini 2.5 Computer Use Preview 10-2025
+----------------------------------------
+models/deep-research-pro-preview-12-2025
+Preview release (December 12th, 2025) of Deep Research Pro
+----------------------------------------
+models/gemini-embedding-001
+Obtain a distributed representation of a text.
+----------------------------------------
+models/aqa
+Model trained to return answers to questions that are grounded in provided sources, along with estimating answerable probability.
+----------------------------------------
+models/imagen-4.0-generate-preview-06-06
+Vertex served Imagen 4.0 model
+----------------------------------------
+models/imagen-4.0-ultra-generate-preview-06-06
+Vertex served Imagen 4.0 ultra model
+----------------------------------------
+models/imagen-4.0-generate-001
+Vertex served Imagen 4.0 model
+----------------------------------------
+models/imagen-4.0-ultra-generate-001
+Vertex served Imagen 4.0 ultra model
+----------------------------------------
+models/imagen-4.0-fast-generate-001
+Vertex served Imagen 4.0 Fast model
+----------------------------------------
+models/veo-2.0-generate-001
+Vertex served Veo 2 model. Access to this model requires billing to be enabled on the associated Google Cloud Platform account. Please visit https://console.cloud.google.com/billing to enable it.
+----------------------------------------
+models/veo-3.0-generate-001
+Veo 3
+----------------------------------------
+models/veo-3.0-fast-generate-001
+Veo 3 fast
+----------------------------------------
+models/veo-3.1-generate-preview
+Veo 3.1
+----------------------------------------
+models/veo-3.1-fast-generate-preview
+Veo 3.1 fast
+----------------------------------------
+models/gemini-2.5-flash-native-audio-latest
+Latest release of Gemini 2.5 Flash Native Audio
+----------------------------------------
+models/gemini-2.5-flash-native-audio-preview-09-2025
+Gemini 2.5 Flash Native Audio Preview 09-2025
+----------------------------------------
+models/gemini-2.5-flash-native-audio-preview-12-2025
+Gemini 2.5 Flash Native Audio Preview 12-2025
+----------------------------------------
