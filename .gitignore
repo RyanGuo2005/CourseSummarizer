@@ -1,18 +1,4 @@
-# Secrets
 .env
-
-# Generated Output
-Cover_Letters/
-
-# Python clutter
+*_history.json
+history.json
 __pycache__/
-*.pyc
-venv/
-
-# Data tracking (Optional: remove if you want to sync your log)
-*.csv
-*.pdf
-*.txt
-
-# OS clutter
-.DS_Store
