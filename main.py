@@ -120,7 +120,9 @@ if "summary" not in st.session_state:
 
 # Adding Multiple Course Functionality
 st.sidebar.title("Courses")
-course_name = st.sidebar.text_input("Enter course name", value="General")
+course_name = st.sidebar.text_input(
+    "Enter course name", value="", placeholder="e.g. AISE3351, MSE2213"
+)
 
 # Save New Course Data
 if st.sidebar.button("Save Course"):
