@@ -119,6 +119,9 @@ if "messages" not in st.session_state:
 if "summary" not in st.session_state:
     st.session_state.summary = ""
 
+if "view" not in st.session_state:
+    st.session_state.view = "summary"
+
 # Adding Multiple Course Functionality
 st.sidebar.title("Courses")
 course_name = st.sidebar.text_input(
@@ -139,6 +142,15 @@ if st.sidebar.button("Clear Current Session"):
 
 st.sidebar.markdown("---")
 st.sidebar.subheader("Load or Delete Course")
+
+# ADD to sidebar
+st.sidebar.markdown("---")
+if st.sidebar.button("📄 Show Summary"):
+    st.session_state.view = "summary"
+    st.rerun()
+if st.sidebar.button("💬 Show Chat"):
+    st.session_state.view = "chat"
+    st.rerun()
 
 db_courses = retrieve_all_courses()
 
@@ -195,14 +207,13 @@ else:
         "No courses found in database. Please save a course to see it here."
     )
 
-if st.session_state.summary:
-    with st.expander("View Summary", expanded=True):
-        st.subheader("Summary:")
-        st.markdown(st.session_state.summary)
-
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+if st.session_state.view == "summary" and st.session_state.summary:
+    st.subheader("Summary:")
+    st.markdown(st.session_state.summary)
+elif st.session_state.view == "chat":
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
 with st._bottom:
     col1, col2, col3 = st.columns([2, 2, 1])
@@ -215,6 +226,7 @@ with st._bottom:
             st.rerun()
     # Get text input from user and send to Gemini API, then display response
     if prompt := st.chat_input("Ask question here..."):
+        st.session_state.view = "chat"  # ADD this line
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
@@ -248,6 +260,14 @@ if uploaded_files and st.button("Summarize"):
         # Generate Summary using Gemini API
         response = st.session_state.chat_session.send_message(text + PROMPT)
         st.session_state.summary = response.text
+
+        st.session_state.messages.append(
+            {{"role": "user", "content": "[PDF Lesson uploaded for Summarization]"}}
+        )
+
+        st.session_state.messages.append(
+            {"role": "assistant", "content": response.text}
+        )
         st.rerun()
         print(response.text)
 
