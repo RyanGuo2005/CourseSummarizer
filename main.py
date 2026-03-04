@@ -269,7 +269,7 @@ if uploaded_files and st.button("Summarize"):
         st.session_state.summary = response.text
 
         st.session_state.messages.append(
-            {{"role": "user", "content": "[PDF Lesson uploaded for Summarization]"}}
+            {"role": "user", "content": "[PDF Lesson uploaded for Summarization]"}
         )
 
         st.session_state.messages.append(
