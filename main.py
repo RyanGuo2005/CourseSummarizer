@@ -109,8 +109,14 @@ if "genai_client" not in st.session_state:
 
 # 2. Initialize the Chat Session using the stored client
 if "chat_session" not in st.session_state:
+    # Rebuild history from saved messages if they exist
+    new_chat_history = []
+    for msg in st.session_state.get("messages", []):
+        role = "user" if msg["role"] == "user" else "model"
+        new_chat_history.append({"role": role, "parts": [{"text": msg["content"]}]})
+
     st.session_state.chat_session = st.session_state.genai_client.chats.create(
-        model="gemini-flash-latest", history=chat_history
+        model="gemini-flash-latest", history=new_chat_history
     )
 
 if "messages" not in st.session_state:
