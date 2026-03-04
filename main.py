@@ -143,15 +143,6 @@ if st.sidebar.button("Clear Current Session"):
 st.sidebar.markdown("---")
 st.sidebar.subheader("Load or Delete Course")
 
-# ADD to sidebar
-st.sidebar.markdown("---")
-if st.sidebar.button("📄 Show Summary"):
-    st.session_state.view = "summary"
-    st.rerun()
-if st.sidebar.button("💬 Show Chat"):
-    st.session_state.view = "chat"
-    st.rerun()
-
 db_courses = retrieve_all_courses()
 
 if db_courses:
@@ -206,6 +197,16 @@ else:
     st.sidebar.info(
         "No courses found in database. Please save a course to see it here."
     )
+
+# ADD to sidebar
+st.sidebar.markdown("---")
+if st.sidebar.button("📄 Show Summary"):
+    st.session_state.view = "summary"
+    st.rerun()
+if st.sidebar.button("💬 Show Chat"):
+    st.session_state.view = "chat"
+    st.rerun()
+
 
 if st.session_state.view == "summary" and st.session_state.summary:
     st.subheader("Summary:")
